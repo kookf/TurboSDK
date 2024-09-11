@@ -92,13 +92,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId 广告id
 /// @params delegate 代理
 /// @params adSize 广告尺寸
-- (void)loadNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdSize:(CGSize)adSize;
+/// @params extra 本地配置参数,
+- (void)loadNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdSize:(CGSize)adSize withExtra:(NSDictionary *)extra;
 
 
 /// 展示原生广告
 /// @params placementId 广告id
 /// @params adViewFrame 原生广告视图坐标
-- (UIView *)showNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
+- (ATNativeADView *)showNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
 
 
 /// 检测广告是否加载成功
