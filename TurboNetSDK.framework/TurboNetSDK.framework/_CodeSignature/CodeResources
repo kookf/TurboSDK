@@ -702,14 +702,6 @@
 		<data>
 		7pb/tiRb/KGE5KXo5P2+XBbJDLs=
 		</data>
-		<key>SDWebImage.bundle/Info.plist</key>
-		<data>
-		/R/x5DqweghtcAwafsNzASl7M4U=
-		</data>
-		<key>SDWebImage.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		PFHYbs0V3eUFDWQyYQcwEetuqEk=
-		</data>
 		<key>UnityAds.bundle/Info.plist</key>
 		<data>
 		xjoMpZGtEARSbOybvlLZXuEn+SY=
@@ -2821,28 +2813,6 @@
 			<key>hash2</key>
 			<data>
 			NBdLMoqFX7Ov/mII2GrezPd6ClAP70i6z2JRWl/xxEg=
-			</data>
-		</dict>
-		<key>SDWebImage.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/R/x5DqweghtcAwafsNzASl7M4U=
-			</data>
-			<key>hash2</key>
-			<data>
-			pAoTM1RyAtROpUwBjFyiqAhg/WVYCTdyRIgCpXd1dVo=
-			</data>
-		</dict>
-		<key>SDWebImage.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PFHYbs0V3eUFDWQyYQcwEetuqEk=
-			</data>
-			<key>hash2</key>
-			<data>
-			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
 			</data>
 		</dict>
 		<key>UnityAds.bundle/Info.plist</key>
