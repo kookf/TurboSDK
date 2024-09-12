@@ -133,8 +133,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 加载广告
 /// @params placementId 广告id
 /// @params delegate 代理
-/// @params adSize 广告视图大小
-- (void)loadBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate withAdSize:(CGSize)adSize;
+/// @params extra 本地参数配置
+- (void)loadBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate withExtra:(NSDictionary *)extra;
 
 
 
@@ -143,7 +143,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId  广告id
 /// @params delegate 代理
 
-- (UIView *)showBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate;
+- (ATBannerView *)showBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate;
 
 /// 检测广告
 /// @params placementId 广告id
