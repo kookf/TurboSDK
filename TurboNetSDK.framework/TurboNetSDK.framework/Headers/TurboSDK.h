@@ -23,14 +23,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIViewController *rewardRootViewController;
 @property(nonatomic,strong)UIViewController *splashRootViewController;
 @property(nonatomic,strong)UIViewController *interstitialRootViewController;
-@property(nonatomic,strong)ATNativeAdOffer *offer;
-@property(nonatomic,strong)ATNativeADConfiguration *config;
 
+
++ (void)setLogEnable:(BOOL)logEnabled;
+
++ (void)getSDKVerson;
 
 /// 初始化sdk
-/// @params appid 应用id
-/// @params logEnabled 日志开关
-+ (void)initSDK:(NSString *)appid withSetLogEnable:(BOOL)logEnabled;
+/// @params appId 应用id
++ (void)initSDK:(NSString *)appId;
+
+
 
 /// 加载开屏广告
 /// @param placementId - 广告id
@@ -115,10 +118,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载draw信息流
 /// @params placementId 广告id
+/// @params extra 本地参数
 /// @params delegate 代理
-/// @params adSize 透传给广告平台，广告平台会返回相近尺寸的最优模板广告
 
-- (void)loadDrawNative:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATNativeADDelegate>)delegate withAdSize:(CGSize)adSize;
+- (void)loadDrawNative:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATNativeADDelegate>)delegate;
 
 
 /// 展示draw信息流
@@ -127,7 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params adViewFrame 广告视图坐标
 /// @return 广告对象
 
-- (UIView *)showDrawNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
+- (ATNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
 
 
 
@@ -142,7 +145,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params delegate 代理
 /// @params extra 本地参数配置
 - (void)loadBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate withExtra:(NSDictionary *)extra;
-
 
 
 
