@@ -27,8 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)ATNativeADConfiguration *config;
 
 
-
-/// 初始化sdl
+/// 初始化sdk
 /// @params appid 应用id
 /// @params logEnabled 日志开关
 + (void)initSDK:(NSString *)appid withSetLogEnable:(BOOL)logEnabled;
@@ -36,14 +35,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// 加载开屏广告
 /// @param placementId - 广告id
 /// @param delegate 代理
+/// @params extra 本地参数
 /// @param bottomView 开屏广告底部视图，不传即是全屏
 
-- (void)loadSplash:(NSString *)placementId withDelegate:(id<ATSplashDelegate>)delegate withBottomView:(UIView * _Nullable)bottomView;
+- (void)loadSplash:(NSString *)placementId withDelegate:(id<ATSplashDelegate>)delegate withExtra:(NSDictionary *)extra withBottomView:(UIView * _Nullable)bottomView;
+
 
 /// 展示开屏广告
 /// @param placementId 广告id
+/// @param mainWindow 根视图
+/// @params extra 本地参数
 /// @params delegate 代理
-- (void)showSplash:(NSString *)placementId withDelegate:(id<ATSplashDelegate>)delegate;
+- (void)showSplash:(NSString *)placementId withWindows:(UIWindow *)mainWindow withExtra:(NSDictionary *)extra withDelegate:(id<ATSplashDelegate>)delegate;
+
 
 /// 检测广告
 /// @params placementId 广告id
@@ -53,9 +57,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载插屏
 /// @params placementId 广告id
+/// @params extra 本地参数
 /// @params delegate 代理
 /// 
-- (void)loadInterstitial:(NSString *)placementId withDelegate:(id<ATInterstitialDelegate>)delegate;
+- (void)loadInterstitial:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATInterstitialDelegate>)delegate;
+
 
 /// 显示插屏
 /// @params placementId 广告id
@@ -70,10 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载激励广告
 /// @params placementId 广告id
-/// @params delegate 代理
 /// @params extra 本地参数
+/// @params delegate 代理
 ///
-- (void)loadReward:(NSString *)placementId withDelegate:(id<ATRewardedVideoDelegate>)delegate withExtra:(nonnull NSDictionary *)extra;
+- (void)loadReward:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATRewardedVideoDelegate>)delegate;
+
 
 /// 展示激励广告
 /// @params placementId 广告id
@@ -111,7 +118,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params delegate 代理
 /// @params adSize 透传给广告平台，广告平台会返回相近尺寸的最优模板广告
 
-- (void)loadDrawNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdSize:(CGSize)adSize;
+- (void)loadDrawNative:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATNativeADDelegate>)delegate withAdSize:(CGSize)adSize;
 
 
 /// 展示draw信息流
