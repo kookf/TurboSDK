@@ -642,73 +642,13 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ChartboostMediationAdapterChartboost.bundle/Info.plist</key>
-		<data>
-		D5nv/rvEg/PoS/7j7SdCKuPyn7I=
-		</data>
-		<key>ChartboostMediationAdapterChartboost.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		Eq4eiivdfFc9fjHGBSV6laZaNKI=
-		</data>
-		<key>ChartboostMediationSDK.bundle/Info.plist</key>
-		<data>
-		Vq1CJF4sFvrtffFSj9ubY+Nb1gY=
-		</data>
-		<key>ChartboostMediationSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		/N9ohm1pTzqukbCMJmJ3dtJwfoo=
-		</data>
-		<key>ChartboostSDKResources.bundle/Contents/Info.plist</key>
-		<data>
-		03pp5GPZcARmoHr0LqYpjHzVATc=
-		</data>
-		<key>ChartboostSDKResources.bundle/Contents/Resources/info.png</key>
-		<data>
-		TCKP9O02+ZkDdhVQ+KUuNWlrKxo=
-		</data>
-		<key>ChartboostSDKResources.bundle/Contents/Resources/omsdk-v1.js</key>
-		<data>
-		UPsyQ4QhueEUHFjFPzJBwqY+ezo=
-		</data>
-		<key>FBAudienceNetwork.bundle/Info.plist</key>
-		<data>
-		FvJBaGb1FSUqZuEHmMDrFKnWe00=
-		</data>
-		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		iJf6SpfSfy71MDcGI+K9k1a78DU=
-		</data>
 		<key>Headers/TurboSDK.h</key>
 		<data>
-		oEWPtSDlxQQ1kwk5Auy+ijNAjXs=
+		97A/I1jcJb50STdeMu0qvZStDbw=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		1/t7JraUMjzfIrFTpPdq/T/5tTs=
-		</data>
-		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
-		<data>
-		pacFE2AhkE/aE2aqoY6wefZy6OA=
-		</data>
-		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		BLNjR6VVI/K82v3iQCE5o0YXgGI=
-		</data>
-		<key>MTGSDK.bundle/Info.plist</key>
-		<data>
-		NGlfDlsoVxtFacQyljZQ7dYYxeI=
-		</data>
-		<key>MTGSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		7pb/tiRb/KGE5KXo5P2+XBbJDLs=
-		</data>
-		<key>UnityAds.bundle/Info.plist</key>
-		<data>
-		xjoMpZGtEARSbOybvlLZXuEn+SY=
-		</data>
-		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
 		</data>
 		<key>baidumobadsdk.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -2661,180 +2601,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ChartboostMediationAdapterChartboost.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			D5nv/rvEg/PoS/7j7SdCKuPyn7I=
-			</data>
-			<key>hash2</key>
-			<data>
-			R8GUTjcqbqbKgrk7y8crYkLv++1IezmOJcSM/CMnKLE=
-			</data>
-		</dict>
-		<key>ChartboostMediationAdapterChartboost.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Eq4eiivdfFc9fjHGBSV6laZaNKI=
-			</data>
-			<key>hash2</key>
-			<data>
-			G6yCf0myuKU1hJG5aYIDvxkXkabxujo6zjsShdUtLRc=
-			</data>
-		</dict>
-		<key>ChartboostMediationSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Vq1CJF4sFvrtffFSj9ubY+Nb1gY=
-			</data>
-			<key>hash2</key>
-			<data>
-			kTDCfSL4z0lv1O9VLdODeogN8Onv0wD92lcEall96AE=
-			</data>
-		</dict>
-		<key>ChartboostMediationSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/N9ohm1pTzqukbCMJmJ3dtJwfoo=
-			</data>
-			<key>hash2</key>
-			<data>
-			FVRJ0VJV2yGMbDU7Eu7SQYjsDWuSTX5UMGOe5vMQeug=
-			</data>
-		</dict>
-		<key>ChartboostSDKResources.bundle/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			03pp5GPZcARmoHr0LqYpjHzVATc=
-			</data>
-			<key>hash2</key>
-			<data>
-			E/BgxtdPGayds7XT1QZ4398vWL47oB6m2b+iFle4syM=
-			</data>
-		</dict>
-		<key>ChartboostSDKResources.bundle/Contents/Resources/info.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TCKP9O02+ZkDdhVQ+KUuNWlrKxo=
-			</data>
-			<key>hash2</key>
-			<data>
-			9EDiJ536QNg6NQmm8fCPFkmAu5DIDy0pLqeRNnXhf5g=
-			</data>
-		</dict>
-		<key>ChartboostSDKResources.bundle/Contents/Resources/omsdk-v1.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UPsyQ4QhueEUHFjFPzJBwqY+ezo=
-			</data>
-			<key>hash2</key>
-			<data>
-			ShR/8hidaXo8kuwWQMmddy/BUzb0V0wNJBtDy9CTvc4=
-			</data>
-		</dict>
-		<key>FBAudienceNetwork.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FvJBaGb1FSUqZuEHmMDrFKnWe00=
-			</data>
-			<key>hash2</key>
-			<data>
-			7fSUkU2TYNct6qkSYtMFJ3uJxszD0mdYrKG7VNw2p/c=
-			</data>
-		</dict>
-		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iJf6SpfSfy71MDcGI+K9k1a78DU=
-			</data>
-			<key>hash2</key>
-			<data>
-			cSw93xWtIPxdaMlNpIyJu23eaMe/V5QkksYayESwhlc=
-			</data>
-		</dict>
 		<key>Headers/TurboSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oEWPtSDlxQQ1kwk5Auy+ijNAjXs=
+			97A/I1jcJb50STdeMu0qvZStDbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cPLvO6Y+vVVuGsi5RbiiGC5GIbu5vzVIgV+D08utgME=
-			</data>
-		</dict>
-		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pacFE2AhkE/aE2aqoY6wefZy6OA=
-			</data>
-			<key>hash2</key>
-			<data>
-			EVFpon7AEyadhNUslYqH1CDMI5+YK4EZnk1KIqAqDm8=
-			</data>
-		</dict>
-		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BLNjR6VVI/K82v3iQCE5o0YXgGI=
-			</data>
-			<key>hash2</key>
-			<data>
-			ES/wHPURrhqoWqlouH6JyVI5Y7FKY1pgaWMpkbPGo0E=
-			</data>
-		</dict>
-		<key>MTGSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NGlfDlsoVxtFacQyljZQ7dYYxeI=
-			</data>
-			<key>hash2</key>
-			<data>
-			KYr1FlT9YYxovipcHnb98j36rogG02XldgVVnkOmIoY=
-			</data>
-		</dict>
-		<key>MTGSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7pb/tiRb/KGE5KXo5P2+XBbJDLs=
-			</data>
-			<key>hash2</key>
-			<data>
-			NBdLMoqFX7Ov/mII2GrezPd6ClAP70i6z2JRWl/xxEg=
-			</data>
-		</dict>
-		<key>UnityAds.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xjoMpZGtEARSbOybvlLZXuEn+SY=
-			</data>
-			<key>hash2</key>
-			<data>
-			bkppa8CdTldfDoJyn14WH0Hw00IVAUd9U5hoqdBixlQ=
-			</data>
-		</dict>
-		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
+			0M5qxEOW24grlwuC5IH9XLzEskOEOIPbt9+tF4zGqI0=
 			</data>
 		</dict>
 		<key>baidumobadsdk.bundle/PrivacyInfo.xcprivacy</key>
