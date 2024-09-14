@@ -131,6 +131,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (ATNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
 
+/// 获取广告素材
+/// @params placementId 广告id
+/// @return 广告素材
+- (ATNativeAdOffer *)getOffer:(NSString *)placementId;
 
 
 /// 检测广告
