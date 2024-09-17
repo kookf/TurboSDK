@@ -33,7 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)initSDK:(NSString *)appId;
 
 
-
 /// 加载开屏广告
 /// @param placementId - 广告id
 /// @param delegate 代理
@@ -80,7 +79,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId 广告id
 /// @params extra 本地参数
 /// @params delegate 代理
-///
+
+// 如果开启服务器回调,需要回传userId和userData
+
+//NSDictionary *extra = @{
+//       kATAdLoadingExtraUserIDKey:@"userId",
+//       kATAdLoadingExtraMediaExtraKey:@"userData",
+//       kATAdLoadingExtraRewardNameKey:@"奖励名称",
+//       kATAdLoadingExtraRewardAmountKey:@(3)
+// };
+
 - (void)loadReward:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATRewardedVideoDelegate>)delegate;
 
 
