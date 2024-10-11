@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIViewController *interstitialRootViewController;
 
 
+
 + (void)setLogEnable:(BOOL)logEnabled;
 
 + (void)getSDKVerson;
