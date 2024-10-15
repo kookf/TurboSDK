@@ -6,59 +6,59 @@
 #import <Foundation/Foundation.h>
 #import "TBAdLoadingDelegate.h"
 
-@class ATNativeADView;
+@class TBNativeADView;
 
 
 @protocol TBNativeADDelegate<TBAdLoadingDelegate>
 
 
 /// Native ads displayed successfully
-- (void)didShowNativeAdInAdView:(ATNativeADView *)adView
+- (void)didShowNativeAdInAdView:(TBNativeADView *)adView
                     placementID:(NSString *)placementID
                           extra:(NSDictionary *)extra;
 
 /// Native ad click
-- (void)didClickNativeAdInAdView:(ATNativeADView *)adView
+- (void)didClickNativeAdInAdView:(TBNativeADView *)adView
                      placementID:(NSString *)placementID
                            extra:(NSDictionary *)extra;
 
 @optional
 
 /// Native video ad starts playing
-- (void)didStartPlayingVideoInAdView:(ATNativeADView *)adView
+- (void)didStartPlayingVideoInAdView:(TBNativeADView *)adView
                          placementID:(NSString *)placementID
                                extra:(NSDictionary *)extra;
 
 /// Native video ad ends playing
-- (void)didEndPlayingVideoInAdView:(ATNativeADView *)adView
+- (void)didEndPlayingVideoInAdView:(TBNativeADView *)adView
                        placementID:(NSString *)placementID
                              extra:(NSDictionary *)extra;
 
 /// Native ad close button cliecked
-- (void)didTapCloseButtonInAdView:(ATNativeADView *)adView
+- (void)didTapCloseButtonInAdView:(TBNativeADView *)adView
                       placementID:(NSString *)placementID
                             extra:(NSDictionary *)extra;
 
 /// Native ads click to close the details page
 /// v5.7.47+
-- (void)didCloseDetailInAdView:(ATNativeADView *)adView
+- (void)didCloseDetailInAdView:(TBNativeADView *)adView
                    placementID:(NSString *)placementID
                          extra:(NSDictionary *)extra;
 
 /// Whether the click jump of Native ads is in the form of Deeplink
 /// currently only returns for TopOn Adx ads
-- (void)didDeepLinkOrJumpInAdView:(ATNativeADView *)adView
+- (void)didDeepLinkOrJumpInAdView:(TBNativeADView *)adView
                       placementID:(NSString *)placementID
                             extra:(NSDictionary *)extra
                            result:(BOOL)success;
 
 /// Native enters full screen video ads, only for Nend
-- (void)didEnterFullScreenVideoInAdView:(ATNativeADView *)adView
+- (void)didEnterFullScreenVideoInAdView:(TBNativeADView *)adView
                             placementID:(NSString *)placementID
                                   extra:(NSDictionary *)extra;
 
 /// Native exit full screen video ad, only for Nend
-- (void)didExitFullScreenVideoInAdView:(ATNativeADView *)adView
+- (void)didExitFullScreenVideoInAdView:(TBNativeADView *)adView
                            placementID:(NSString *)placementID
                                  extra:(NSDictionary *)extra;
 

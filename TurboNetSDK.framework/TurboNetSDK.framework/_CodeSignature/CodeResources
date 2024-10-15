@@ -680,7 +680,7 @@
 		</data>
 		<key>Headers/TBBannerDelegate.h</key>
 		<data>
-		Lkjizwy5lVZz0LBjr8m0L4AgInU=
+		Uh9PM2DDDLpANvsE5gOFMMrDuDA=
 		</data>
 		<key>Headers/TBHeader.h</key>
 		<data>
@@ -692,7 +692,7 @@
 		</data>
 		<key>Headers/TBNativeADDelegate.h</key>
 		<data>
-		e40Zm4742Ay6fRyCgmhPU0c86s0=
+		5m+ib5Q723xF/DOke0ZD6Bo7ZeA=
 		</data>
 		<key>Headers/TBRewardedVideoDelegate.h</key>
 		<data>
@@ -704,7 +704,7 @@
 		</data>
 		<key>Headers/TurboSDK.h</key>
 		<data>
-		WqSTXk1M4ofPl9CvYaI/0DJyfmE=
+		vIDhi16CPRT5VMp5DFBc5iM5zz4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -2800,11 +2800,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lkjizwy5lVZz0LBjr8m0L4AgInU=
+			Uh9PM2DDDLpANvsE5gOFMMrDuDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Ur/GnV5iOZ2CPDmk7u4DP7lL1XJ97loh8mSAykCsVs=
+			HhtEhPQ4y3diB8zlVGMSk9+UI20Mr91HDhBvOofQ03U=
 			</data>
 		</dict>
 		<key>Headers/TBHeader.h</key>
@@ -2833,11 +2833,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e40Zm4742Ay6fRyCgmhPU0c86s0=
+			5m+ib5Q723xF/DOke0ZD6Bo7ZeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			twIXsnkQLG0Z09Vhh4xB9SGz55aejWxt7FDQGkEJWjY=
+			ORQ5xc94FtywuRNrdi9q/4m3sc8Knc1MJiWnPtgFXM0=
 			</data>
 		</dict>
 		<key>Headers/TBRewardedVideoDelegate.h</key>
@@ -2866,11 +2866,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WqSTXk1M4ofPl9CvYaI/0DJyfmE=
+			vIDhi16CPRT5VMp5DFBc5iM5zz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			L8RD35xIR92PamrdcSC1g0F6Mo7LooUXfC2bgCom31k=
+			weq/ucThx55x86jZMFRxCOTKumAc2x+N1aMYnZLuSn0=
 			</data>
 		</dict>
 		<key>baidumobadsdk.bundle/PrivacyInfo.xcprivacy</key>

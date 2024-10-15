@@ -8,34 +8,34 @@
 #import "TBAdLoadingDelegate.h"
 
 
-@class ATBannerView;
+@class TBBannerView;
 
 
 @protocol TBBannerDelegate<TBAdLoadingDelegate>
 
 /// BannerView display results
-- (void)bannerView:(ATBannerView *)bannerView didShowAdWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
+- (void)bannerView:(TBBannerView *)bannerView didShowAdWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
 
 /// bannerView click
-- (void)bannerView:(ATBannerView *)bannerView didClickWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
+- (void)bannerView:(TBBannerView *)bannerView didClickWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
 
 @optional
 
 /// bannerView auto refresh
-- (void)bannerView:(ATBannerView *)bannerView didAutoRefreshWithPlacement:(NSString *)placementID extra:(NSDictionary *)extra;
+- (void)bannerView:(TBBannerView *)bannerView didAutoRefreshWithPlacement:(NSString *)placementID extra:(NSDictionary *)extra;
 
 /// BannerView auto refresh failed
-- (void)bannerView:(ATBannerView *)bannerView failedToAutoRefreshWithPlacementID:(NSString *)placementID error:(NSError *)error;
+- (void)bannerView:(TBBannerView *)bannerView failedToAutoRefreshWithPlacementID:(NSString *)placementID error:(NSError *)error;
 
 /// bannerView click the close button
-- (void)bannerView:(ATBannerView *)bannerView didTapCloseButtonWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
+- (void)bannerView:(TBBannerView *)bannerView didTapCloseButtonWithPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
 
 /// bannerView ad landing page closed
 /// support network: [GDT][CSJ]
-- (void)bannerView:(ATBannerView *)bannerView didLPCloseForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
+- (void)bannerView:(TBBannerView *)bannerView didLPCloseForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra;
 
 /// Whether the bannerView click jump is in the form of Deeplink
 /// currently only returns for TopOn Adx advertisements
-- (void)bannerView:(ATBannerView *)bannerView didDeepLinkOrJumpForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra result:(BOOL)success;
+- (void)bannerView:(TBBannerView *)bannerView didDeepLinkOrJumpForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra result:(BOOL)success;
 
 @end

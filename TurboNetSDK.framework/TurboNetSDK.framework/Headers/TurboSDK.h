@@ -5,8 +5,7 @@
 #import <Foundation/Foundation.h>
 #import "TBHeader.h"
 
-
-@class UIViewController, UIView, UIWindow;
+@class UIViewController, UIWindow,TBNativeADView,TBBannerView;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,16 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIViewController *splashRootViewController;
 @property(nonatomic,strong)UIViewController *interstitialRootViewController;
 
-
-
-+ (void)setLogEnable:(BOOL)logEnabled;
-
 + (void)getSDKVerson;
 
 /// 初始化sdk
 /// @params appId 应用id
 + (void)initSDK:(NSString *)appId;
-
 
 /// 加载开屏广告
 /// @param placementId - 广告id
@@ -114,7 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 展示原生广告
 /// @params placementId 广告id
 /// @params adViewFrame 原生广告视图坐标
-- (ATNativeADView *)showNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
+- (TBNativeADView *)showNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
 
 
 /// 检测广告是否加载成功
@@ -136,7 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params adViewFrame 广告视图坐标
 /// @return 广告对象
 
-- (ATNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
+- (TBNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
 
 /// 获取广告素材
 /// @params placementId 广告id
@@ -162,7 +156,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId  广告id
 /// @params delegate 代理
 
-- (ATBannerView *)showBanner:(NSString *)placementId withDelegate:(id<TBBannerDelegate>)delegate;
+- (TBBannerView *)showBanner:(NSString *)placementId withDelegate:(id<TBBannerDelegate>)delegate;
 
 /// 检测广告
 /// @params placementId 广告id
