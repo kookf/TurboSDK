@@ -682,6 +682,10 @@
 		<data>
 		Uh9PM2DDDLpANvsE5gOFMMrDuDA=
 		</data>
+		<key>Headers/TBBannerView.h</key>
+		<data>
+		lPWRKKoVmJt+7mVo46MiZMJuj/0=
+		</data>
 		<key>Headers/TBHeader.h</key>
 		<data>
 		I8xRzoD6H9S5CPFcKOgfTtwl3Nk=
@@ -693,6 +697,10 @@
 		<key>Headers/TBNativeADDelegate.h</key>
 		<data>
 		5m+ib5Q723xF/DOke0ZD6Bo7ZeA=
+		</data>
+		<key>Headers/TBNativeADView.h</key>
+		<data>
+		xVQn9zHQocfhM48yq0WuspzKiak=
 		</data>
 		<key>Headers/TBRewardedVideoDelegate.h</key>
 		<data>
@@ -2807,6 +2815,17 @@
 			HhtEhPQ4y3diB8zlVGMSk9+UI20Mr91HDhBvOofQ03U=
 			</data>
 		</dict>
+		<key>Headers/TBBannerView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lPWRKKoVmJt+7mVo46MiZMJuj/0=
+			</data>
+			<key>hash2</key>
+			<data>
+			7X26PXU/Bigd8maD3/fjghSXLjoqJbxQuSlt1RKoOyo=
+			</data>
+		</dict>
 		<key>Headers/TBHeader.h</key>
 		<dict>
 			<key>hash</key>
@@ -2838,6 +2857,17 @@
 			<key>hash2</key>
 			<data>
 			ORQ5xc94FtywuRNrdi9q/4m3sc8Knc1MJiWnPtgFXM0=
+			</data>
+		</dict>
+		<key>Headers/TBNativeADView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xVQn9zHQocfhM48yq0WuspzKiak=
+			</data>
+			<key>hash2</key>
+			<data>
+			Atvvs95Hyd5zjYIqc9M0N9LG/DRUgc7SwFuBvE1z4Ls=
 			</data>
 		</dict>
 		<key>Headers/TBRewardedVideoDelegate.h</key>
