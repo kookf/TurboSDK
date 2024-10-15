@@ -12,3 +12,6 @@
 #import "TBRewardedVideoDelegate.h"
 #import "TBNativeADDelegate.h"
 #import "TBBannerDelegate.h"
+#import "TBBannerView.h"
+#import "TBNativeADView.h"
+
