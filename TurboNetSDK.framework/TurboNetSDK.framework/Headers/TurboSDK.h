@@ -3,12 +3,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "AnyThinkNative/AnyThinkNative.h"
-#import "AnyThinkSplash/AnyThinkSplash.h"
-#import "AnyThinkInterstitial/AnyThinkInterstitial.h"
-#import "AnyThinkRewardedVideo/AnyThinkRewardedVideo.h"
-#import "AnyThinkBanner/AnyThinkBanner.h"
+#import "TBHeader.h"
+
+
+@class UIViewController, UIView, UIWindow;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params extra 本地参数
 /// @param bottomView 开屏广告底部视图，不传即是全屏
 
-- (void)loadSplash:(NSString *)placementId withDelegate:(id<ATSplashDelegate>)delegate withExtra:(NSDictionary *)extra withBottomView:(UIView * _Nullable)bottomView;
+- (void)loadSplash:(NSString *)placementId withDelegate:(id<TBSplashDelegate>)delegate withExtra:(NSDictionary *)extra withBottomView:(UIView * _Nullable)bottomView;
 
 
 /// 展示开屏广告
@@ -48,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param mainWindow 根视图
 /// @params extra 本地参数
 /// @params delegate 代理
-- (void)showSplash:(NSString *)placementId withWindows:(UIWindow *)mainWindow withExtra:(NSDictionary *)extra withDelegate:(id<ATSplashDelegate>)delegate;
+- (void)showSplash:(NSString *)placementId withWindows:(UIWindow *)mainWindow withExtra:(NSDictionary *)extra withDelegate:(id<TBSplashDelegate>)delegate;
 
 
 /// 检测广告
@@ -62,13 +60,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params extra 本地参数
 /// @params delegate 代理
 /// 
-- (void)loadInterstitial:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATInterstitialDelegate>)delegate;
+- (void)loadInterstitial:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<TBInterstitialDelegate>)delegate;
 
 
 /// 显示插屏
 /// @params placementId 广告id
 /// @parmas delegate 代理
-- (void)showInterstitial:(NSString *)placementId withDelegate:(id<ATInterstitialDelegate>)delegate;
+- (void)showInterstitial:(NSString *)placementId withDelegate:(id<TBInterstitialDelegate>)delegate;
 
 
 /// 检测广告
@@ -90,14 +88,14 @@ NS_ASSUME_NONNULL_BEGIN
 //       kATAdLoadingExtraRewardAmountKey:@(3)
 // };
 
-- (void)loadReward:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATRewardedVideoDelegate>)delegate;
+- (void)loadReward:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<TBRewardedVideoDelegate>)delegate;
 
 
 /// 展示激励广告
 /// @params placementId 广告id
 /// @params delegate 代理
 ///
-- (void)showReward:(NSString *)placementId withDelegate:(id<ATRewardedVideoDelegate>)delegate;
+- (void)showReward:(NSString *)placementId withDelegate:(id<TBRewardedVideoDelegate>)delegate;
 
 /// 检测广告
 /// @params placementId 广告id
@@ -110,13 +108,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId 广告id
 /// @params delegate 代理
 /// @params extra 本地配置参数,
-- (void)loadNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withExtra:(NSDictionary *)extra;
+- (void)loadNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>)delegate withExtra:(NSDictionary *)extra;
 
 
 /// 展示原生广告
 /// @params placementId 广告id
 /// @params adViewFrame 原生广告视图坐标
-- (ATNativeADView *)showNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
+- (ATNativeADView *)showNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
 
 
 /// 检测广告是否加载成功
@@ -129,7 +127,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params extra 本地参数
 /// @params delegate 代理
 
-- (void)loadDrawNative:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<ATNativeADDelegate>)delegate;
+- (void)loadDrawNative:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<TBNativeADDelegate>)delegate;
 
 
 /// 展示draw信息流
@@ -138,7 +136,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params adViewFrame 广告视图坐标
 /// @return 广告对象
 
-- (ATNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<ATNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
+- (ATNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
 
 /// 获取广告素材
 /// @params placementId 广告id
@@ -156,7 +154,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId 广告id
 /// @params delegate 代理
 /// @params extra 本地参数配置
-- (void)loadBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate withExtra:(NSDictionary *)extra;
+- (void)loadBanner:(NSString *)placementId withDelegate:(id<TBBannerDelegate>)delegate withExtra:(NSDictionary *)extra;
 
 
 
@@ -164,7 +162,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId  广告id
 /// @params delegate 代理
 
-- (ATBannerView *)showBanner:(NSString *)placementId withDelegate:(id<ATBannerDelegate>)delegate;
+- (ATBannerView *)showBanner:(NSString *)placementId withDelegate:(id<TBBannerDelegate>)delegate;
 
 /// 检测广告
 /// @params placementId 广告id
