@@ -130,7 +130,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params adViewFrame 广告视图坐标
 /// @return 广告对象
 
-- (TBNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame WithSelfRenderView:(UIView *)selfRenderView;
+- (TBNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame;
+
+@property (nonatomic,strong)UIView *selfRenderView;
+@property(nonatomic,strong)ATNativeADConfiguration *config;
 
 /// 获取广告素材
 /// @params placementId 广告id
@@ -164,6 +167,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (bool)checkBanner:(NSString *)placementId;
 
 
+
+- (NSString *)DrawId:(NSString *)placementId;
 
 
 
