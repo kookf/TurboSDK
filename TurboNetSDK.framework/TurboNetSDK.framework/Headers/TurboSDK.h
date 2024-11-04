@@ -87,9 +87,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示激励广告
 /// @params placementId 广告id
+/// @params ext 自定义参数 extraInfo
 /// @params delegate 代理
 ///
-- (void)showReward:(NSString *)placementId withDelegate:(id<TBRewardedVideoDelegate>)delegate;
+- (void)showReward:(NSString *)placementId withCustomExt:(NSString *)ext withDelegate:(id<ATRewardedVideoDelegate>)delegate;
 
 /// 检测广告
 /// @params placementId 广告id
