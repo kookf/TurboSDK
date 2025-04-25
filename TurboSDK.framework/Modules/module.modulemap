@@ -1,6 +1,0 @@
-framework module TurboSDK {
-  umbrella header "TurboSDK.h"
-  export *
-
-  module * { export * }
-}
