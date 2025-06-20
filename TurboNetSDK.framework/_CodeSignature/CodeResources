@@ -409,10 +409,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>CHANGELOG.md</key>
-		<data>
-		wJURcPse2UxDJ2gp+KfsTorU5xU=
-		</data>
 		<key>Headers/TBAdLoadingDelegate.h</key>
 		<data>
 		suJhozcH4M2gCEsts57Us74PaIU=
@@ -1877,17 +1873,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>CHANGELOG.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wJURcPse2UxDJ2gp+KfsTorU5xU=
-			</data>
-			<key>hash2</key>
-			<data>
-			7GtuZSUqceuudDlahVY4nmRCT5R3yikxFQ7yT0yuPbo=
-			</data>
 		</dict>
 		<key>Headers/TBAdLoadingDelegate.h</key>
 		<dict>
