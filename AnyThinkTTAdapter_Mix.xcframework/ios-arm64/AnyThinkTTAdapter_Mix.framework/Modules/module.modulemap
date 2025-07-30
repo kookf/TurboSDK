@@ -1,0 +1,6 @@
+framework module AnyThinkTTAdapter_Mix {
+  umbrella header "AnyThinkTTAdapter_Mix.h"
+  export *
+
+  module * { export * }
+}
