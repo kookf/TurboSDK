@@ -13,12 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
-@property(nonatomic,strong)UIViewController *nativeRootViewController;
-@property(nonatomic,strong)UIViewController *bannerRootViewController;
-@property(nonatomic,strong)UIViewController *drawRootViewController;
-@property(nonatomic,strong)UIViewController *rewardRootViewController;
-@property(nonatomic,strong)UIViewController *splashRootViewController;
-@property(nonatomic,strong)UIViewController *interstitialRootViewController;
+@property(nonatomic,weak)UIViewController *nativeRootViewController;
+@property(nonatomic,weak)UIViewController *bannerRootViewController;
+@property(nonatomic,weak)UIViewController *drawRootViewController;
+@property(nonatomic,weak)UIViewController *rewardRootViewController;
+@property(nonatomic,weak)UIViewController *splashRootViewController;
+@property(nonatomic,weak)UIViewController *interstitialRootViewController;
 
 + (NSString *)getSDKVerson;
 
