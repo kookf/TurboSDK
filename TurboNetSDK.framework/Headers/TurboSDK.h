@@ -89,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params placementId 广告id
 /// @params delegate 代理
 ///
-- (void)showReward:(NSString *)placementId withDelegate:(id<ATRewardedVideoDelegate>)delegate;
+- (void)showReward:(NSString *)placementId withDelegate:(id<TBRewardedVideoDelegate>)delegate;
 
 /// 检查当前是否存在可展示的广告
 /// @params placementId 广告id
