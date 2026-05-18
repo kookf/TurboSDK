@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import "TBHeader.h"
 
+typedef void (^TurboCompletionHandler)(BOOL success, NSError * _Nullable error);
+
 @class UIViewController, UIWindow,TBNativeADView,TBBannerView;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,7 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 初始化sdk
 /// @params appId 应用id
 + (void)initSDK:(NSString *)appId;
-
+/// 初始化sdk
+/// @params appId 应用id
+/// @params completionHandler 初始化回调方法
++ (void)initSDK:(NSString *)appId completionHandler:(TurboCompletionHandler _Nullable)completionHandler;
 /// 设置开屏广告预置策略，需在发起加载广告之前调用。
 /// 注意：仅在首次请求广告位时使用，获取线上广告位策略成功后，后续将会使用线上配置的广告位策略
 /// @params bundle 传入预制策略文件(json)引入到工程对应的Bundle
