@@ -96,13 +96,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @params extra 本地参数
 /// @params delegate 代理
 
-// 如果开启服务器回调,需要回传userId和userData
-
+// 如果开启服务端激励回调，需要在extra中设置kATAdLoadingExtraUserIDKey(userId)和kATAdLoadingExtraMediaExtraKey(userData)的参数，当激励下发时，服务端激励回调会透传这两个参数给开发者。
+// ⚠️如果userData中包含特殊字符，则需要对userData做URL Encode
+// 示例如下:
 //NSDictionary *extra = @{
-//       kATAdLoadingExtraUserIDKey:@"userId",
-//       kATAdLoadingExtraMediaExtraKey:@"userData",
-//       kATAdLoadingExtraRewardNameKey:@"奖励名称",
-//       kATAdLoadingExtraRewardAmountKey:@(3)
+//       kATAdLoadingExtraUserIDKey:@"your_user_id",
+//       kATAdLoadingExtraMediaExtraKey:@"your_user_data",
+//       kATAdLoadingExtraRewardNameKey:@"your_reward_name",
+//       kATAdLoadingExtraRewardAmountKey:@(1)
 // };
 
 - (void)loadReward:(NSString *)placementId withExtra:(NSDictionary *)extra withDelegate:(id<TBRewardedVideoDelegate>)delegate;
