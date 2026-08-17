@@ -1,0 +1,6 @@
+framework module AnyThinkJYAdapter {
+  umbrella header "AnyThinkJYAdapter.h"
+  export *
+
+  module * { export * }
+}
