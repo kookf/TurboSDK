@@ -5,7 +5,7 @@
 //  Created by mac on 2024/10/15.
 //
 
-#import <AnyThinkSDK/AnyThinkSDK.h>
+#import <AnyThinkBanner/AnyThinkBanner.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

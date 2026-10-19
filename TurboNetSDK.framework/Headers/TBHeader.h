@@ -2,7 +2,11 @@
 //  TBHeader.h
 //  TurboNetSDK
 //
-#import <AnyThinkSDK/AnyThinkSDK.h>
+#import "AnyThinkNative/AnyThinkNative.h"
+#import "AnyThinkSplash/AnyThinkSplash.h"
+#import "AnyThinkInterstitial/AnyThinkInterstitial.h"
+#import "AnyThinkRewardedVideo/AnyThinkRewardedVideo.h"
+#import "AnyThinkBanner/AnyThinkBanner.h"
 #import "TBSplashDelegate.h"
 #import "TBIntertitialDelegate.h"
 #import "TBRewardedVideoDelegate.h"

@@ -1,0 +1,6 @@
+framework module TurboNetSDK {
+  umbrella header "TurboNetSDK.h"
+  export *
+
+  module * { export * }
+}

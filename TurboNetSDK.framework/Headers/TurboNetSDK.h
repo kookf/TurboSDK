@@ -13,7 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
-+ (NSString *)getSDKVerson;
+@property(nonatomic,strong)UIViewController *nativeRootViewController;
+@property(nonatomic,strong)UIViewController *bannerRootViewController;
+@property(nonatomic,strong)UIViewController *drawRootViewController;
+@property(nonatomic,strong)UIViewController *rewardRootViewController;
+@property(nonatomic,strong)UIViewController *splashRootViewController;
+@property(nonatomic,strong)UIViewController *interstitialRootViewController;
+
++ (void)getSDKVerson;
 
 /// 初始化sdk
 /// @params appId 应用id
@@ -31,18 +38,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 展示开屏广告
 /// @param placementId 广告id
 /// @param mainWindow 根视图
-/// @params viewController 展示广告的ViewController
 /// @params extra 本地参数
-- (void)showSplash:(NSString *)placementId
-       withWindows:(UIWindow *)mainWindow
-  inViewController:(UIViewController *)viewController
-         withExtra:(NSDictionary *)extra;
+/// @params delegate 代理
+- (void)showSplash:(NSString *)placementId withWindows:(UIWindow *)mainWindow withExtra:(NSDictionary *)extra withDelegate:(id<TBSplashDelegate>)delegate;
 
 
-/// 检查当前是否存在可展示的广告
+/// 检测广告
 /// @params placementId 广告id
 ///
-+ (BOOL) checkSplash:(NSString *)placementId;
++ (bool) checkSplash:(NSString *)placementId;
 
 
 /// 加载插屏
@@ -55,13 +59,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 显示插屏
 /// @params placementId 广告id
-/// @params viewController 展示广告的ViewController
-- (void)showInterstitial:(NSString *)placementId inViewController:(UIViewController *)viewController;
+/// @parmas delegate 代理
+- (void)showInterstitial:(NSString *)placementId withDelegate:(id<TBInterstitialDelegate>)delegate;
 
 
-/// 检查当前是否存在可展示的广告
+/// 检测广告
 /// @params placementId 广告id
-+ (BOOL)checkInterstitial:(NSString *)placementId;
++ (bool)checkInterstitial:(NSString *)placementId;
 
 
 /// 加载激励广告
@@ -83,14 +87,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示激励广告
 /// @params placementId 广告id
-/// @params viewController 展示广告的ViewController
+/// @params delegate 代理
 ///
-- (void)showReward:(NSString *)placementId inViewController:(UIViewController *)viewController;
+- (void)showReward:(NSString *)placementId withDelegate:(id<ATRewardedVideoDelegate>)delegate;
 
-/// 检查当前是否存在可展示的广告
+/// 检测广告
 /// @params placementId 广告id
 ///
-+ (BOOL)checkReward:(NSString *)placementId;
++ (bool)checkReward:(NSString *)placementId;
 
 
 
@@ -103,14 +107,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示原生广告
 /// @params placementId 广告id
-/// @params viewController 展示广告的ViewController
 /// @params adViewFrame 原生广告视图坐标
-- (TBNativeADView *)showNative:(NSString *)placementId inViewController:(UIViewController *)viewController withAdViewFrame:(CGRect)adViewFrame;
+- (TBNativeADView *)showNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>)delegate withAdViewFrame:(CGRect)adViewFrame;
 
 
-/// 检查当前是否存在可展示的广告
+/// 检测广告是否加载成功
 /// @params placementId 广告id
-+(BOOL)checkNative:(NSString *)placementId;
++(bool)checkNative:(NSString *)placementId;
 
 
 /// 加载draw信息流
@@ -123,19 +126,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示draw信息流
 /// @params placementId 广告id
-/// @params viewController 展示广告的ViewController
+/// @params delegate 代理
 /// @params adViewFrame 广告视图坐标
 /// @return 广告对象
 
-- (TBNativeADView *)showDrawNative:(NSString *)placementId inViewController:(UIViewController *)viewController WithAdViewFrame:(CGRect)adViewFrame;
+- (TBNativeADView *)showDrawNative:(NSString *)placementId withDelegate:(id<TBNativeADDelegate>) delegate WithAdViewFrame:(CGRect)adViewFrame;
 
 @property (nonatomic,strong)UIView *selfRenderView;
+@property(nonatomic,strong)ATNativeADConfiguration *config;
 
-
-
-/// 检查当前是否存在可展示的广告
+/// 获取广告素材
 /// @params placementId 广告id
-+ (BOOL)checkDrawNative:(NSString *)placementId;
+/// @return 广告素材
+- (ATNativeAdOffer *)getOffer:(NSString *)placementId;
+
+
+/// 检测广告
+/// @params placementId 广告id
++ (bool)checkDrawNative:(NSString *)placementId;
 
 
 
@@ -149,14 +157,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 显示广告
 /// @params placementId  广告id
-/// @params viewController 展示广告的ViewController
+/// @params delegate 代理
 
-- (TBBannerView *)showBanner:(NSString *)placementId inViewController:(UIViewController *)viewController;
+- (TBBannerView *)showBanner:(NSString *)placementId withDelegate:(id<TBBannerDelegate>)delegate;
 
-/// 检查当前是否存在可展示的广告
+/// 检测广告
 /// @params placementId 广告id
 
-+ (BOOL)checkBanner:(NSString *)placementId;
++ (bool)checkBanner:(NSString *)placementId;
 
 
 
